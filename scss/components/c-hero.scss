@@ -1,0 +1,138 @@
+/*---- COMPONENTE HERO ----*/
+
+//Variables Config Hero
+$hero-background-color: #ffffff;
+$hero-title-color: $gray-80;
+$hero-title-size: 1.3em;
+
+
+//Hero
+.c-hero{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $hero-background-color;
+  @media (min-width: 600px){
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 0;
+    align-items: center;
+  }
+
+  //Modificador Reverse
+  &--reverse{
+    flex-direction: column-reverse;
+    @media (min-width: 600px){
+      flex-direction: row-reverse;
+    }
+  }
+
+  //Modificador Vertical
+  &--vertical{
+    @media (min-width: 600px){
+      flex-direction: column;
+      .c-hero__img{
+        max-height: 400px;
+      }
+    }
+  }
+
+  //Modificador Over
+  &--over{
+    display: block;
+    position: relative;
+    z-index: 0;
+    .c-hero__img{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+    .c-hero__copy-text{
+      width: 100%;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  //Modificador Center
+  &--center{
+    .c-hero__copy-text{
+      width: 100%;
+      text-align: center;
+      position: relative;
+      &:before{
+        content: '';
+        background-image: url("/images/icon-play.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 15px 15px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: $app-color1;
+        border-radius: 40px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+
+//Bloque imagen hero
+.c-hero__img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: text-top;
+    transition: 0.3s;
+  }
+}
+//Efecto Hover
+.c-hero:hover {
+  .c-hero__img img{
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+}
+
+
+//Bloque texto hero
+.c-hero__copy-text{
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  text-align: left;
+}
+
+//Título hero
+.c-hero__title{
+  width: 100%;
+  display: inline-block;
+  line-height: 1.3em;
+  margin-bottom: 15px;
+  font-size: $hero-title-size;
+  color: $hero-title-color;
+  &--over{
+    color: $white !important;
+  }
+}
+
+//Acciones hero
+.c-hero__actions{
+  width: 100%;
+  display: inline-block;
+  margin-top: 10px;
+}

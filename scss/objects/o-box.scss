@@ -1,0 +1,16 @@
+/*---- BOXES ----*/
+
+.o-box{
+  width: 100%;
+  background-color: $white;
+  border-radius: 0;
+  border: 0;
+  &--shadow{
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(235,235,235,1);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(235,235,235,1);
+    box-shadow: 1px 1px 4px 0px rgba(235,235,235,1);
+  }
+  &--border{
+    border: 1px solid $gray-10;
+  }
+}

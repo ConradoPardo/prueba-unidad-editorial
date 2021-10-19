@@ -1,0 +1,12 @@
+/*---- TITLES ----*/
+.o-title{
+  width: 100%;
+  display: inline-block;
+  line-height: 1.3em;
+  margin-bottom: 15px;
+  color: #333333;
+  &--section{
+    color: $app-color2;
+    text-align: center;
+  }
+}

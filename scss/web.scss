@@ -1,0 +1,20 @@
+/* RESET CSS */
+@import "partial/reset.scss";
+
+@import "partial/variables.scss";
+
+/* FUENTES LOCAL CSS */
+@import "partial/fonts-local.scss";
+
+/* OBJETOS */
+@import "objects/o-box.scss";
+@import "objects/o-btn.scss";
+@import "objects/o-title.scss";
+
+/* COMPONENTES */
+@import "components/c-hero.scss";
+
+
+//CSS GENERALES
+// Hoja principal de estilos
+@import "partial/main.scss";

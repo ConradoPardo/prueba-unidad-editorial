@@ -1,0 +1,23 @@
+/*---- BUTTONS ----*/
+
+.o-btn{
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  box-shadow: none;
+  border: 1px solid $app-color1;
+  background-color: $app-color1;
+  border-radius: 0;
+  color: #ffffff;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 0 15px;
+  line-height: 38px;
+  transition: 0.3s;
+  &:hover{
+    border: 1px solid darken($app-color1, 15%);
+    background-color: darken($app-color1, 15%);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+}

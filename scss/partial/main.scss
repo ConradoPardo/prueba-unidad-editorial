@@ -1,0 +1,51 @@
+/*---- ESTILOS GENERALES ----*/
+
+body{
+  background-color: $bg-site-color;
+  color: $base-font-color;
+  font-family: $font-primary;
+  font-size: $base-font-size;
+}
+
+header{
+  padding: 15px;
+  text-align: center;
+  background-color: $gray-5;
+}
+
+footer{
+  padding: 15px;
+  text-align: center;
+  background-color: $gray-5;
+}
+
+main{
+  width: 100%;
+  display: block;
+}
+
+.container{
+  width: 100%;
+  max-width: $app-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+section{
+  width: 100%;
+  display: block;
+  padding: 40px 0;
+}
+
+
+h1{
+  font-size: 1.8em;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+h3{
+  font-size: 1.2em;
+}
