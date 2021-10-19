@@ -1,2 +1,2 @@
 # prueba-unidad-editorial
-Prueba de creación de componente para Unidad Editorial
+Creación de componente Hero para Unidad Editorial
